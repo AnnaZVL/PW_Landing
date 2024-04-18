@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header container">
+        <a href="#" class="header__logo logo">
+            <img class="logo__icon" src="./images/icon/logo.svg" alt="Логотип">
+        </a>
+        <div class="header__buttons">
+            <button class="btn small">Войти</button>
+            <button class="btn small">Регистрация</button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero container ">
+            <div class="hero__body">
+                <h1 class="hero__title">PulseWave</h1>
+                <span class="hero__subtitle">Одно приложение для решения всех Ваших задач!</span>
+                <button class="hero__btn btn small">Зарегистрироваться</button>
+                <p class="hero__descr">Неограниченный функционал, понятный интерфейс и большое количество возможностей
+                    помогут Вам улучшить рабочий процесс.
+                    Приветствуем вас в PulseWave – приложении для эффективного управления проектами!</p>
+            </div>
+            <div class="hero__swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="hero__img" src="./images/hero.png" alt="Слайд приложения">
+                    </div>
+                    <div class="swiper-slide"><img class="hero__img" src="./images/hero.png" alt="Слайд приложения">
+                    </div>
+                    <div class="swiper-slide"><img class="hero__img" src="./images/hero.png" alt="Слайд приложения">
+                    </div>
+                </div>
+            </div>
+            <svg class="hero__bg" width="965" height="965" viewBox="0 0 965 965" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    @keyframes change_fill1 {
+
+                        0%,
+                        100% {
+                            fill-opacity: 0.25
+                        }
+
+                        50% {
+                            fill-opacity: 0.6
+                        }
+                    }
+
+                    @keyframes rotateRight {
+                        from {
+                            transform: rotate(0deg);
+                        }
+
+                        to {
+                            transform: rotate(360deg);
+                        }
+                    }
+
+                    @keyframes rotateLeft {
+                        from {
+                            transform: rotate(0deg);
+                        }
+
+                        to {
+                            transform: rotate(-360deg);
+                        }
+                    }
+
+                    @keyframes change_fill2 {
+
+                        0%,
+                        100% {
+                            fill-opacity: 0.4
+                        }
+
+                        50% {
+                            fill-opacity: 0.7
+                        }
+                    }
+
+                    @keyframes change_fill3 {
+
+                        0%,
+                        100% {
+                            fill-opacity: 0.6
+                        }
+
+                        50% {
+                            fill-opacity: 0.2
+                        }
+                    }
+
+                    @keyframes recize {
+
+                        0%,
+                        100% {
+                            r: 94.2383px
+                        }
+
+                        50% {
+                            r: 90px
+                        }
+                    }
+
+                    path:nth-child(1) {
+                        animation: change_fill1 3s linear infinite, rotateLeft 5s infinite linear;
+                        transform-origin: center center;
+                    }
+
+                    path:nth-child(2) {
+                        animation: change_fill2 3s linear infinite;
+                    }
+
+                    path:nth-child(3) {
+                        animation: change_fill1 3s linear infinite, rotateRight 5s infinite linear;
+                        transform-origin: center center;
+                    }
+
+                    circle {
+                        animation: recize 5s linear infinite;
+                    }
+                </style>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M482.5 965C748.977 965 965 748.977 965 482.5C965 216.023 748.977 0 482.5 0C216.023 0 0 216.023 0 482.5C0 748.977 216.023 965 482.5 965ZM482.499 827.144C672.84 827.144 827.142 672.842 827.142 482.501C827.142 292.16 672.84 137.858 482.499 137.858C292.158 137.858 137.856 292.16 137.856 482.501C137.856 672.842 292.158 827.144 482.499 827.144Z"
+                    fill="#E6EAF4" fill-opacity="0.25" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M483.129 780.293C650.718 780.293 786.576 644.435 786.576 476.846C786.576 309.256 650.718 173.398 483.129 173.398C315.54 173.398 179.682 309.256 179.682 476.846C179.682 644.435 315.54 780.293 483.129 780.293ZM483.129 693.594C602.836 693.594 699.877 596.552 699.877 476.845C699.877 357.139 602.836 260.097 483.129 260.097C363.422 260.097 266.381 357.139 266.381 476.845C266.381 596.552 363.422 693.594 483.129 693.594Z"
+                    fill="#E6EAF4" fill-opacity="0.4" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M483.128 662.181C585.486 662.181 668.464 579.203 668.464 476.846C668.464 374.488 585.486 291.51 483.128 291.51C380.77 291.51 297.793 374.488 297.793 476.846C297.793 579.203 380.77 662.181 483.128 662.181ZM483.127 609.228C556.24 609.228 615.51 549.958 615.51 476.845C615.51 403.733 556.24 344.463 483.127 344.463C410.015 344.463 350.745 403.733 350.745 476.845C350.745 549.958 410.015 609.228 483.127 609.228Z"
+                    fill="#E6EAF4" fill-opacity="0.6" />
+                <circle cx="483.756" cy="477.474" r="94.2383" fill="#E6EAF4" fill-opacity="0.8" />
+            </svg>
+        </section>
+    </main>
+    <!-- <main>
+        <section class="hero" id="hero">
+            <div class="container">
+                <h1>PulseWave</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, commodi.</p>
+            </div>
+        </section>
+        <section class="one"></section>
+        <section class="second">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora non similique ipsa odio eaque corrupti
+                possimus ut alias amet deleniti.</p>
+        </section>
+        <section class="thre"></section>
+    </main> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/main.js"></script>
+</body>
+
+</html>

@@ -15,8 +15,9 @@ html {
     --color_gold-active: #ffc83b;
     --color_black-default: #424242;
     --color_text-default: #101012;
+    --color_gray-blue: #f5f7fa;
 
-    /* $color_gray-blue: #f5f7fa;
+    /* $
 $color_error-red: #d15901;
 $color_error-background: #fff7f1;
 $color_bright-yellow: #e8d100;
@@ -71,12 +72,18 @@ $color_hover_board: #f1f2f3; ../fonts/Mulish-Regular.ttf*/
 
 body {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     font-family: "Mulish", sans-serif;
     font-size: 16px;
     font-weight: normal;
     color: var(--color_black-default);
     background-color: var(--color-white);
+}
+
+main {
+    flex: 1;
 }
 
 img {
@@ -246,6 +253,53 @@ h1, h2, h3, h4, h5, h6, p {
     width: 530px;
 }
 
+/*Footer*/
+.footer {
+    background: var(--color_gray-blue);
+    height: 90px;
+    position: relative;
+}
+
+.footer__container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer__link {
+    font-weight: normal;
+    color: var(--color_text-default);
+}
+  
+.footer__icons {
+    margin: 0 auto;
+    padding: 0 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: -73px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    max-width: 1440px;
+    width: 100%;
+    height: 75px;
+}
+  
+.footer__icon {
+    width: 77px;
+    height: 71px;
+}
+  
 /* .visible {
     opacity: 1;
     visibility: visible; 

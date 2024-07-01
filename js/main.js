@@ -44,15 +44,15 @@ document.addEventListener('scroll', function() {
   }
 });
 
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false,
-  },
-  spaceBetween: 30,
-  effect: "flip",
-  grabCursor: true,
-  speed: 800
-})
+// const swiper = new Swiper('.swiper', {
+//   direction: 'horizontal',
+//   loop: true,
+//   autoplay: {
+//     delay: 3500,
+//     disableOnInteraction: false,
+//   },
+//   spaceBetween: 30,
+//   effect: "flip",
+//   grabCursor: true,
+//   speed: 800
+// })

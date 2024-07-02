@@ -16,26 +16,6 @@ html {
     --color_black-default: #424242;
     --color_text-default: #101012;
     --color_gray-blue: #f5f7fa;
-
-    /* $
-$color_error-red: #d15901;
-$color_error-background: #fff7f1;
-$color_bright-yellow: #e8d100;
-$color_pale-yellow: #fffff7;
-$
-$
-$color_light-gray: #b7b7b7;
-$color_light-gray-button: #e2e2e2;
-$color_telegram: #27a5e5;
-
-
-
-// Цвета с шапки
-$color_border: #d9d9d9;
-
-$color_profile-background: #fafafa;
-
-$color_hover_board: #f1f2f3; ../fonts/Mulish-Regular.ttf*/
 }
 
 @font-face {
@@ -231,7 +211,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 32px;
     opacity: 0;
     transform: translateX(-100%);
-    animation: slideInLeft 1.5s forwards;
+    animation: slideInLeft 3s forwards;
 }
 
 @keyframes slideInLeft {
@@ -333,6 +313,22 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: center;
 }
 
+.advantages__swiper {
+    width: 100%;
+  }
+
+.advantages-slide{
+    background-position: center;
+    background-size: cover;
+    width: 660px;
+    height: 500px;
+}
+
+.advantages-slide img {
+    display: block;
+    width: 100%;
+}
+
 .advantages__list {
     margin-bottom: 28px;
     display: grid;
@@ -377,6 +373,102 @@ h1, h2, h3, h4, h5, h6, p {
 
 .advantages__btn-disabled {
     background-color: var(--color_gray-blue);
+}
+
+/*FAQ*/
+.faq {
+    margin-bottom: 100px;
+}
+.faq__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.faq__title {
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.faq-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.faq-card__header {    
+    width: 100% ;
+}
+
+.faq-card__btn {
+    padding: 10px 10px 10px 66px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+    color: var(--color_text-default);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background 0.3s ease-in-out;
+}
+
+.faq-card__btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    border: 3px solid var(--color_text-default);
+    transition: background 0.3s ease-in-out;
+}
+
+.faq-card__btn:hover::before {
+    background-color: var(--color_gray-blue);
+}
+
+.faq-card__arrow {
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq-card__arrow path {
+    fill: var(--color_gray-blue);
+    transition: fill 0.3s ease-in-out;
+}
+
+.faq-card__body {
+    padding-left: 66px;
+    height: 0;
+    transition: height 0.3s ease-in-out;
+}
+
+.faq-card__text {
+    font-size: 16px;
+    color: var(--color_black-default);
+}
+
+.faq-card.open .faq-card__btn::before {
+    background-color: var(--color_gold);
+}
+
+.faq-card.open .faq-card__arrow {
+    transform: rotate(180deg);
+}
+
+.faq-card.open .faq-card__arrow path {
+    fill: var(--color_gold);
 }
 
 /*Footer*/

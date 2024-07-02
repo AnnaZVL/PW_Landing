@@ -20,7 +20,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="hero ">
+        <section class="hero">
             <div class="hero__container section__container">
                 <div class="hero__body">
                     <h1 class="hero__title">PulseWave</h1>
@@ -39,21 +39,23 @@
                         </div>
                         <div class="swiper-slide"><img class="hero__img" src="./images/hero.png" alt="Слайд приложения">
                         </div>
+                        <div class="swiper-slide"><img class="hero__img" src="./images/hero.png" alt="Слайд приложения">
+                        </div>
                     </div>
                 </div>
             </div>
             <svg class="hero__bg" width="1259" height="748" viewBox="0 0 1259 748" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <!-- <style>
+                <style>
                     @keyframes change_fill1 {
 
                         0%,
                         100% {
-                            fill-opacity: 0.25
+                            fill-opacity: 0.1
                         }
 
                         50% {
-                            fill-opacity: 0.6
+                            fill-opacity: 0.8
                         }
                     }
 
@@ -81,11 +83,11 @@
 
                         0%,
                         100% {
-                            fill-opacity: 0.4
+                            fill-opacity: 0.2
                         }
 
                         50% {
-                            fill-opacity: 0.7
+                            fill-opacity: 0.9
                         }
                     }
 
@@ -93,11 +95,11 @@
 
                         0%,
                         100% {
-                            fill-opacity: 0.6
+                            fill-opacity: 0.9
                         }
 
                         50% {
-                            fill-opacity: 0.2
+                            fill-opacity: 0.1
                         }
                     }
 
@@ -105,39 +107,39 @@
 
                         0%,
                         100% {
-                            r: 94.2383px
+                            r: 129px
                         }
 
                         50% {
-                            r: 90px
+                            r: 115px
                         }
                     }
 
-                    path:nth-child(1) {
+                    .circle-1 {
                         animation: change_fill1 3s linear infinite, rotateLeft 5s infinite linear;
                         transform-origin: center center;
                     }
 
-                    path:nth-child(2) {
+                    .circle-2 {
                         animation: change_fill2 3s linear infinite;
                     }
 
-                    path:nth-child(3) {
-                        animation: change_fill1 3s linear infinite, rotateRight 5s infinite linear;
+                    .circle-3 {
+                        animation: change_fill3 3s linear infinite, rotateRight 5s infinite linear;
                         transform-origin: center center;
                     }
 
                     circle {
                         animation: recize 5s linear infinite;
                     }
-                </style> -->
-                <path fill-rule="evenodd" clip-rule="evenodd"
+                </style>
+                <path class="circle-1" fill-rule="evenodd" clip-rule="evenodd"
                     d="M629.318 1007.64C976.881 1007.64 1258.64 725.881 1258.64 378.318C1258.64 30.7554 976.881 -251 629.318 -251C281.755 -251 0 30.7554 0 378.318C0 725.881 281.755 1007.64 629.318 1007.64ZM629.318 827.832C877.577 827.832 1078.83 626.578 1078.83 378.319C1078.83 130.06 877.577 -71.1938 629.318 -71.1938C381.058 -71.1938 179.805 130.06 179.805 378.319C179.805 626.578 381.058 827.832 629.318 827.832Z"
                     fill="#E6EAF4" fill-opacity="0.25" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
+                <path class="circle-2" fill-rule="evenodd" clip-rule="evenodd"
                     d="M630.138 766.726C848.722 766.726 1025.92 589.528 1025.92 370.944C1025.92 152.359 848.722 -24.8387 630.138 -24.8387C411.553 -24.8387 234.355 152.359 234.355 370.944C234.355 589.528 411.553 766.726 630.138 766.726ZM630.139 653.645C786.271 653.645 912.841 527.075 912.841 370.943C912.841 214.812 786.271 88.2417 630.139 88.2417C474.007 88.2417 347.438 214.812 347.438 370.943C347.438 527.075 474.007 653.645 630.139 653.645Z"
                     fill="#E6EAF4" fill-opacity="0.4" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
+                <path class="circle-3" fill-rule="evenodd" clip-rule="evenodd"
                     d="M630.139 612.674C763.643 612.674 871.869 504.448 871.869 370.944C871.869 237.44 763.643 129.213 630.139 129.213C496.635 129.213 388.408 237.44 388.408 370.944C388.408 504.448 496.635 612.674 630.139 612.674ZM630.139 543.608C725.499 543.608 802.804 466.303 802.804 370.943C802.804 275.583 725.499 198.279 630.139 198.279C534.779 198.279 457.475 275.583 457.475 370.943C457.475 466.303 534.779 543.608 630.139 543.608Z"
                     fill="#E6EAF4" fill-opacity="0.6" />
                 <circle cx="630.957" cy="371.763" r="122.914" fill="#E6EAF4" fill-opacity="0.8" />
@@ -279,13 +281,27 @@
             <div class="advantages__container container">
                 <div class="advantages__swiper swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img class="swiper__img" src="./images/hero.png" alt="Слайд приложения">
+                        <div class="swiper-slide advantages-slide">
+                            <img src="./images/hero.png" />
                         </div>
-                        <!-- <div class="swiper-slide"><img class="advantages__img" src="./images/hero.png" alt="Слайд приложения">
-            </div>
-            <div class="swiper-slide"><img class="advantages__img" src="./images/hero.png" alt="Слайд приложения">
-            </div> -->
+                        <div class="swiper-slide advantages-slide">
+                            <img src="./images/hero.png" />
+                        </div>
+                        <div class="swiper-slide advantages-slide">
+                            <img src="./images/hero.png" />
+                        </div>
+                        <div class="swiper-slide advantages-slide">
+                            <img src="./images/hero.png" />
+                        </div>
+                        <div class="swiper-slide advantages-slide">
+                            <img src="./images/hero.png" />
+                        </div>
+                        <div class="swiper-slide advantages-slide">
+                            <img src="./images/hero.png" />
+                        </div>
+                        <div class="swiper-slide advantages-slide">
+                            <img src="./images/hero.png" />
+                        </div>
                     </div>
                 </div>
                 <div class="advantages__content">
@@ -324,6 +340,128 @@
                 <div class="advantages__buttons">
                     <button class="btn advantages__btn advantages__btn-disabled">Написать разработчикам</button>
                     <button class="btn advantages__btn">Начать бесплатно</button>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="faq__container section__container">
+                <h3 class="faq__title">FaQ Вопросы и ответы</h3>
+                <div class="faq__body">
+                    <div class="faq-card">
+                        <h4 class="faq-card__header">
+                            <button class="faq-card__btn">
+                                <span>Как зарегистрироваться в системе?</span>
+                                <svg class="faq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
+                                    <path
+                                        d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                        stroke="none" />
+                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                                </svg>
+                            </button>
+                        </h4>
+                        <div class="faq-card__body">
+                            <span class="faq-card__text">
+                                Чтобы зарегистрироваться в нашем трекере задач, нажмите на кнопку "Регистрация" в правом
+                                верхнем углу страницы. Заполните необходимые поля с информацией о вас и вашей команде,
+                                подтвердите свою почту и вы сразу же сможете приступить к работе.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="faq-card">
+                        <h4 class="faq-card__header">
+                            <button class="faq-card__btn">
+                                <span>Как добавить новую задачу?</span>
+                                <svg class="faq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
+                                    <path
+                                        d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                        stroke="none" />
+                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                                </svg>
+                            </button>
+                        </h4>
+                        <div class="faq-card__body">
+                            <span class="faq-card__text">
+                                Для добавления новой задачи, авторизуйтесь, найдите Доску своего проекта, нажмите иконку
+                                "Добавить задачу" и заполните необходимые поля, такие как название задачи, описание,
+                                дедлайн и ответственный. После задача автоматически сохранится.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="faq-card">
+                        <h4 class="faq-card__header">
+                            <button class="faq-card__btn">
+                                <span>Можно ли назначить задачи на нескольких пользователей?</span>
+                                <svg class="faq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
+                                    <path
+                                        d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                        stroke="none" />
+                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                                </svg>
+                            </button>
+                        </h4>
+                        <div class="faq-card__body">
+                            <span class="faq-card__text">
+                                Да, вы можете назначить задачу на нескольких пользователей. При создании или
+                                редактировании задачи, просто добавьте всех необходимых пользователей в поле
+                                "Ответственные".
+                            </span>
+                        </div>
+                    </div>
+                    <div class="faq-card">
+                        <h4 class="faq-card__header">
+                            <button class="faq-card__btn">
+                                <span>Как отслеживать прогресс выполнения задач?</span>
+                                <svg class="faq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
+                                    <path
+                                        d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                        stroke="none" />
+                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                                </svg>
+                            </button>
+                        </h4>
+                        <div class="faq-card__body">
+                            <span class="faq-card__text">
+                                Для отслеживания прогресса выполнения задач, воспользуйтесь нашей интерактивной панелью.
+                                В каждом проекте есть вкладка "Прогресс", где отображается состояние всех задач, их
+                                статус и оставшееся время до дедлайна.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="faq-card">
+                        <h4 class="faq-card__header">
+                            <button class="faq-card__btn">
+                                <span>Как отслеживать прогресс выполнения задач?</span>
+                                <svg class="faq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
+                                    <path
+                                        d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z"
+                                        stroke="none" />
+                                    <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+                                </svg>
+                            </button>
+                        </h4>
+                        <div class="faq-card__body">
+                            <span class="faq-card__text">
+                                Для отслеживания прогресса выполнения задач, воспользуйтесь нашей интерактивной панелью.
+                                В каждом проекте есть вкладка "Прогресс", где отображается состояние всех задач, их
+                                статус и оставшееся время до дедлайна.
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -44,15 +44,67 @@ document.addEventListener('scroll', function() {
   }
 });
 
-// const swiper = new Swiper('.swiper', {
-//   direction: 'horizontal',
-//   loop: true,
-//   autoplay: {
-//     delay: 3500,
-//     disableOnInteraction: false,
-//   },
-//   spaceBetween: 30,
-//   effect: "flip",
-//   grabCursor: true,
-//   speed: 800
-// })
+const swiperHero = new Swiper('.hero__swiper', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  spaceBetween: 30,
+  effect: "flip",
+  grabCursor: true,
+  speed: 800
+})
+
+const swiperAdvantages = new Swiper(".advantages__swiper", {
+  effect: "coverflow",
+  loop: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    scale: 0.7,
+    slideShadows: false,
+  },  
+});
+
+// Аккордеон секции FAQ
+const $accBtnAll = document.querySelectorAll('.faq-card');
+
+$accBtnAll.forEach((item, index) => {
+  const $accBtn = item.querySelector('.faq-card__btn');
+
+  $accBtn.addEventListener('click', () => {
+    item.classList.toggle('open');
+
+      const $body = item.querySelector('.faq-card__body');
+
+      if (item.classList.contains('open')) {
+        $body.style.height = `${$body.scrollHeight}px`
+      } else {
+        $body.style.height = '0px'
+      }
+      closeAcc(index)
+    })
+})
+
+function closeAcc(count) {
+  $accBtnAll.forEach((item, index) => {
+    if (count !== index) {
+      item.classList.remove('open')
+
+      const $body = item.querySelector('.faq-card__body');
+      $body.style.height = '0px';      
+    }
+  })
+}

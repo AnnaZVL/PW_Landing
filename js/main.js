@@ -44,19 +44,19 @@ document.addEventListener('scroll', function() {
   }
 });
 
-const swiperHero = new Swiper('.hero__swiper', {
-  direction: 'horizontal',
-  slidesPerView: 1,
-  loop: true,
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false,
-  },
-  spaceBetween: 30,
-  effect: "flip",
-  grabCursor: true,
-  speed: 800
-})
+// const swiperHero = new Swiper('.hero__swiper', {
+//   direction: 'horizontal',
+//   slidesPerView: 1,
+//   loop: true,
+//   autoplay: {
+//     delay: 3500,
+//     disableOnInteraction: false,
+//   },
+//   spaceBetween: 30,
+//   effect: "flip",
+//   grabCursor: true,
+//   speed: 800
+// })
 
 const swiperAdvantages = new Swiper(".advantages__swiper", {
   effect: "coverflow",
@@ -78,16 +78,16 @@ const swiperAdvantages = new Swiper(".advantages__swiper", {
   },  
 });
 
-// Аккордеон секции FAQ
-const $accBtnAll = document.querySelectorAll('.faq-card');
+// Аккордеон секции faqq
+const $accBtnAll = document.querySelectorAll('.faqq-card');
 
 $accBtnAll.forEach((item, index) => {
-  const $accBtn = item.querySelector('.faq-card__btn');
+  const $accBtn = item.querySelector('.faqq-card__btn');
 
   $accBtn.addEventListener('click', () => {
     item.classList.toggle('open');
 
-      const $body = item.querySelector('.faq-card__body');
+      const $body = item.querySelector('.faqq-card__body');
 
       if (item.classList.contains('open')) {
         $body.style.height = `${$body.scrollHeight}px`
@@ -103,7 +103,7 @@ function closeAcc(count) {
     if (count !== index) {
       item.classList.remove('open')
 
-      const $body = item.querySelector('.faq-card__body');
+      const $body = item.querySelector('.faqq-card__body');
       $body.style.height = '0px';      
     }
   })

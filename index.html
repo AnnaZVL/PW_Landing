@@ -31,18 +31,25 @@
                         помогут Вам улучшить рабочий процесс.
                         Приветствуем вас в PulseWave – приложении для эффективного управления проектами!</p>
                 </div>
-                <div class="hero__swiper swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img class="hero__img" src="./images/hero.png" alt="Слайд приложения">
-                        </div>
-                        <div class="swiper-slide"><img class="hero__img" src="./images/hero.png" alt="Слайд приложения">
-                        </div>
-                        <div class="swiper-slide"><img class="hero__img" src="./images/hero.png" alt="Слайд приложения">
-                        </div>
-                        <div class="swiper-slide"><img class="hero__img" src="./images/hero.png" alt="Слайд приложения">
-                        </div>
+                <div class="hero__images">
+                    <img class="hero__img" src="./images/hero.png" alt="Слайд приложения">
+                    <div class="hero__phone">
+                        <!-- <img src="" alt=""> -->
                     </div>
                 </div>
+                <!-- <div class="hero__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="hero__img" src="./images/hero.png" alt="Слайд приложения">
+                        </div>                        
+                        <div class="swiper-slide"><img class="hero__img" src="./images/hero.png" alt="Слайд приложения">
+                        </div>
+                        <div class="swiper-slide"><img class="hero__img" src="./images/hero.png" alt="Слайд приложения">
+                        </div>
+                        <div class="swiper-slide"><img class="hero__img" src="./images/hero.png" alt="Слайд приложения">
+                        </div> 
+                    </div>
+                </div> -->
             </div>
             <svg class="hero__bg" width="1259" height="748" viewBox="0 0 1259 748" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -241,11 +248,11 @@
             </svg>
         </section>
         <section class="about">
-            <div class="about__container section__container">
+            <div class="about__container">
                 <ul class="about__list">
                     <li class="about__item">
                         <div class="about__icon">
-
+                            <img src="./images/icon/aboud_icon1.svg" alt="">
                         </div>
                         <span class="about__text">Неограниченное
                             количество участников</span>
@@ -345,13 +352,52 @@
         </section>
         <section class="faq">
             <div class="faq__container section__container">
-                <h3 class="faq__title">FaQ Вопросы и ответы</h3>
-                <div class="faq__body">
-                    <div class="faq-card">
-                        <h4 class="faq-card__header">
-                            <button class="faq-card__btn">
+                <div class="faq__content">
+                    <div class="faq__top">
+                        <div class="faq__top--box">
+                            <h3 class="faqq__title">FAQ</h3>
+                            <div class="faq__top--logo">
+                                <img class="logo__icon" src="./images/icon/logo.svg" alt="Логотип">
+                                <p class="faq__item--text">Трекер задач</p>
+                            </div>
+                        </div>
+                        <p class="faq__item--text">Остались вопросы? Найдите ответы ниже.</p>
+                    </div>
+                    <ul class="faq__list">
+                        <li class="faq__item">
+                            <span class="faq__item--title">Как зарегистрироваться в системе?</span>
+                            <span class="faq__item--text">
+                                Чтобы зарегистрироваться в нашем трекере задач, нажмите на кнопку "Регистрация" в правом
+                                верхнем углу страницы. Заполните необходимые поля с информацией о вас и вашей команде,
+                                подтвердите свою почту и вы сразу же сможете приступить к работе.
+                            </span>
+                        </li>
+                        <li class="faq__item">
+                            <span class="faq__item--title">Как добавить новую задачу?</span>
+                            <span class="faq__item--text">
+                                Для добавления новой задачи, авторизуйтесь, найдите Доску своего проекта, нажмите иконку
+                                "Добавить задачу" и заполните необходимые поля, такие как название задачи, описание,
+                                дедлайн и ответственный. После задача автоматически сохранится.
+                            </span>
+                            <img class="faq__item--img" src="./images/faq_item.png" alt="">
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="faq__img">
+                    <img src="./images/faq.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="faqq">
+            <div class="faqq__container section__container">
+                <h3 class="faqq__title">FAQ Вопросы и ответы</h3>
+                <div class="faqq__body">
+                    <div class="faqq-card">
+                        <h4 class="faqq-card__header">
+                            <button class="faqq-card__btn">
                                 <span>Как зарегистрироваться в системе?</span>
-                                <svg class="faq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                <svg class="faqq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
@@ -362,19 +408,19 @@
                                 </svg>
                             </button>
                         </h4>
-                        <div class="faq-card__body">
-                            <span class="faq-card__text">
+                        <div class="faqq-card__body">
+                            <span class="faqq-card__text">
                                 Чтобы зарегистрироваться в нашем трекере задач, нажмите на кнопку "Регистрация" в правом
                                 верхнем углу страницы. Заполните необходимые поля с информацией о вас и вашей команде,
                                 подтвердите свою почту и вы сразу же сможете приступить к работе.
                             </span>
                         </div>
                     </div>
-                    <div class="faq-card">
-                        <h4 class="faq-card__header">
-                            <button class="faq-card__btn">
+                    <div class="faqq-card">
+                        <h4 class="faqq-card__header">
+                            <button class="faqq-card__btn">
                                 <span>Как добавить новую задачу?</span>
-                                <svg class="faq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                <svg class="faqq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
@@ -385,19 +431,19 @@
                                 </svg>
                             </button>
                         </h4>
-                        <div class="faq-card__body">
-                            <span class="faq-card__text">
+                        <div class="faqq-card__body">
+                            <span class="faqq-card__text">
                                 Для добавления новой задачи, авторизуйтесь, найдите Доску своего проекта, нажмите иконку
                                 "Добавить задачу" и заполните необходимые поля, такие как название задачи, описание,
                                 дедлайн и ответственный. После задача автоматически сохранится.
                             </span>
                         </div>
                     </div>
-                    <div class="faq-card">
-                        <h4 class="faq-card__header">
-                            <button class="faq-card__btn">
+                    <div class="faqq-card">
+                        <h4 class="faqq-card__header">
+                            <button class="faqq-card__btn">
                                 <span>Можно ли назначить задачи на нескольких пользователей?</span>
-                                <svg class="faq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                <svg class="faqq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
@@ -408,19 +454,19 @@
                                 </svg>
                             </button>
                         </h4>
-                        <div class="faq-card__body">
-                            <span class="faq-card__text">
+                        <div class="faqq-card__body">
+                            <span class="faqq-card__text">
                                 Да, вы можете назначить задачу на нескольких пользователей. При создании или
                                 редактировании задачи, просто добавьте всех необходимых пользователей в поле
                                 "Ответственные".
                             </span>
                         </div>
                     </div>
-                    <div class="faq-card">
-                        <h4 class="faq-card__header">
-                            <button class="faq-card__btn">
+                    <div class="faqq-card">
+                        <h4 class="faqq-card__header">
+                            <button class="faqq-card__btn">
                                 <span>Как отслеживать прогресс выполнения задач?</span>
-                                <svg class="faq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                <svg class="faqq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
@@ -431,19 +477,19 @@
                                 </svg>
                             </button>
                         </h4>
-                        <div class="faq-card__body">
-                            <span class="faq-card__text">
+                        <div class="faqq-card__body">
+                            <span class="faqq-card__text">
                                 Для отслеживания прогресса выполнения задач, воспользуйтесь нашей интерактивной панелью.
                                 В каждом проекте есть вкладка "Прогресс", где отображается состояние всех задач, их
                                 статус и оставшееся время до дедлайна.
                             </span>
                         </div>
                     </div>
-                    <div class="faq-card">
-                        <h4 class="faq-card__header">
-                            <button class="faq-card__btn">
+                    <div class="faqq-card">
+                        <h4 class="faqq-card__header">
+                            <button class="faqq-card__btn">
                                 <span>Как отслеживать прогресс выполнения задач?</span>
-                                <svg class="faq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                <svg class="faqq-card__arrow" width="50" height="50" viewBox="0 0 50 50" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
@@ -454,8 +500,8 @@
                                 </svg>
                             </button>
                         </h4>
-                        <div class="faq-card__body">
-                            <span class="faq-card__text">
+                        <div class="faqq-card__body">
+                            <span class="faqq-card__text">
                                 Для отслеживания прогресса выполнения задач, воспользуйтесь нашей интерактивной панелью.
                                 В каждом проекте есть вкладка "Прогресс", где отображается состояние всех задач, их
                                 статус и оставшееся время до дедлайна.
